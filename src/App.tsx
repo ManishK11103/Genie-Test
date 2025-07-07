@@ -10,11 +10,11 @@ Amplify.configure(outputs);
 export default function App() {
   return (
     <>
-    <Mess></Mess>
     <Authenticator>
       {({ signOut, user }) => (
         <main>
           <h1>Hello {user!.username}</h1>
+          <Mess></Mess>
           <button onClick={signOut}>Sign out</button>
         </main>
       )}
